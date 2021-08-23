@@ -1,4 +1,2 @@
-# Livro-de-Receitas
+# Atividades realizadas no bootcamp da Generation
 
-atualização
- testando  o git para ver se está funcionando
