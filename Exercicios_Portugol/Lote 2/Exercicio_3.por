@@ -1,6 +1,6 @@
-programa{
-	inclua biblioteca Matematica-->mat
-	funcao inicio(){
+programa{
+	inclua biblioteca Matematica-->mat
+	funcao inicio(){
 		inteiro num1,num2,num3,num4,valor1,valor2,valor3,valor4
 		
 		escreva("\nDigite o primeiro número : ")
@@ -25,7 +25,7 @@ programa{
            	  escreva("\nValor do Terceiro numero: ", valor3)
            }
           senao{
-          	 escreva("\nValor 1: ", valor1, "\nValor 2: ",valor2,"\nValor 3: ",valor3,"\nValor 4: ",valor4)
+          	 escreva("\nNumero ",num1," Valor 1: ", valor1, "\nNumero ",num2," Valor 2: ",valor2,"\nNumero ",num3," Valor 3: ",valor3,"\nNumero  ",num4," Valor 4: ",valor4)
           }
          
 	}
@@ -35,7 +35,7 @@ programa{
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 617; 
+ * @POSICAO-CURSOR = 796; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
