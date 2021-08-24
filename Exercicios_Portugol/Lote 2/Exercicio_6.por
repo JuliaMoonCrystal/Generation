@@ -1,10 +1,14 @@
-programa{
+programa{
 	
-	funcao inicio(){
+	funcao inicio(){
 		inteiro idade
 
 		escreva("\nDigite a sua idade :")
 		leia(idade)
+
+		se(idade <5){
+			escreva("Idade inválida")
+		}
 
 		se(idade >=5 e idade <=7){
 			escreva("\nCategoria Infantil A")
@@ -18,7 +22,7 @@ programa{
 		senao se(idade >=14 e idade <=17){
 			escreva("\nCategoria Juvenil B")
 		}
-		senao{
+		senao se(idade >18){
 			escreva("\nCategoria Adultos")
 		}
 	}
@@ -28,7 +32,7 @@ programa{
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 445; 
+ * @POSICAO-CURSOR = 471; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
