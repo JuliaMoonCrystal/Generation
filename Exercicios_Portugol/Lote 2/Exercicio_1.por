@@ -17,7 +17,7 @@ programa{
          	E = P -50
          	M=E*4
 
-         	escreva("Houve excesso e Jão vai pagar : ",mat.arredondar(M, 2), " de multa")
+         	escreva("Houve excesso e João vai pagar : ",mat.arredondar(M, 2), " $ de multa")
          }
 	
 	
@@ -28,7 +28,7 @@ programa{
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 116; 
+ * @POSICAO-CURSOR = 437; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
