@@ -38,7 +38,7 @@ programa{
 			escreva("\n")
 		}
 
-          escreva(" Matriz M2 \n")
+          escreva("\n Matriz M2 \n")
 		para(inteiro linha=0;linha <4;linha++){
 			para(inteiro coluna=0;coluna <6;coluna++){
                     escreva(" [ ",M2[linha][coluna], " ] ,")	//mostra m2
@@ -54,7 +54,7 @@ programa{
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 964; 
+ * @POSICAO-CURSOR = 1027; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
