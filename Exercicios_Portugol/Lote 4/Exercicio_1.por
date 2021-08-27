@@ -11,9 +11,13 @@ programa{
               	  maiorpontuacao = pontuacao[x]
               }
 
-         	   escreva(" [ ",pontuacao[x]," ] ") //--Teste para ver a saida do vetor
+         	  // escreva(" [ ",pontuacao[x]," ] ") //--Teste para ver a saida do vetor
          }
-
+         escreva("\nVetor")
+         para(inteiro x=0;x<5;x++){
+         	   escreva(" [ ",pontuacao[x]," ] ")
+         }
+  
 		escreva("\nA maior pontuação é : ",maiorpontuacao)
 	}
 }
@@ -22,7 +26,7 @@ programa{
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 366; 
+ * @POSICAO-CURSOR = 440; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {pontuacao, 4, 14, 9}-{maiorpontuacao, 4, 27, 14};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
