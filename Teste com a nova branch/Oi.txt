@@ -1,2 +1,3 @@
 Testando o merge
  2 teste sem o merge
+3- fazendo merge pelo cmd
