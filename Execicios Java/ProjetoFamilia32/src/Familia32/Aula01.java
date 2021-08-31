@@ -1,10 +1,15 @@
 package Familia32;
 
+import javax.swing.JOptionPane;
+
 public class Aula01 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+		String frase= "Ola Mundo";
+		JOptionPane.showMessageDialog(null,frase);
+		
+	
 	}
 
 }
