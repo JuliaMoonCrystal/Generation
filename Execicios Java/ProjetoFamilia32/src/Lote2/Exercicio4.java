@@ -28,10 +28,10 @@ public class Exercicio4 {
 			if(genero == 1 && temp == 2) {
 				numNervosas++;
 			}
-			else if(genero == 2 && temp == 3) {
+		    if(genero == 2 && temp == 3) {
 				numAgressivos++;
 			}
-			else if(genero == 3 && temp == 1) {
+		    if(genero == 3 && temp == 1) {
 				numCalmo++;
 			}
 			
