@@ -8,17 +8,6 @@ public class Exercicio4 {
         int cont=1,idade,maior40=0,menor18=0,genero,temp,numCalmas=0,numNervosas=0,numAgressivos=0,numCalmo=0;
         
         Scanner scan = new Scanner(System.in);
-     
-//        System.out.println("\nDigite a sua idade :");
-//        idade= scan.nextInt();
-//        
-//        System.out.println("\nEscolha o seu sexo: ");
-//        System.out.println("\n1-Feminino \n2-Masculino \n3-Outros");
-//        genero=scan.nextInt();
-//        
-//		System.out.println("\nVocê é uma pessoa :");
-//		System.out.println("\n1- Calma  \n2- Nervosa  \n3- Agressiva");
-//		temp=scan.nextInt();
 		
 		while(cont <=3) {
 			
