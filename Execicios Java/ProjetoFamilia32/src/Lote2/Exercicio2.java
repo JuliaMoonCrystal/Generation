@@ -1,12 +1,18 @@
 package Lote2;
 
+import java.util.Scanner;
+
 public class Exercicio2 {
 
 	public static void main(String[] args) {
-		int par=0,impar=0;
+		int par=0,impar=0,num;
+		
+		Scanner scan = new Scanner(System.in);
 		
 		for (int x=1; x <=10;x++) {
-			if(x % 2 == 0) {
+			System.out.println("\nDigite um número : ");
+			num=scan.nextInt();			
+			if(num % 2 == 0) {
 				par++;
 			}
 			else {
@@ -14,7 +20,7 @@ public class Exercicio2 {
 			}
 		}
 		
-		System.out.println("\n Números pares : "+par+" \nNúmeros impares : "+impar);
+		System.out.println("\nNúmeros pares : "+par+" \nNúmeros impares : "+impar);
 
 	}
 
