@@ -14,7 +14,7 @@ public class Exercicio4 {
 			System.out.println("\nDigite a sua idade :");
 	        idade= scan.nextInt();
 	        
-	        System.out.println("\nEscolha o seu sexo: ");
+	        System.out.println("\nEscolha o seu genero: ");
 	        System.out.println("\n1-Feminino \n2-Masculino \n3-Outros");
 	        genero=scan.nextInt();
 	        
