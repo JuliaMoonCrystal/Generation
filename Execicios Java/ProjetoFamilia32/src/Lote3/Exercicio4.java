@@ -112,6 +112,9 @@ public class Exercicio4 {
 				System.out.println("\n Fim da consulta");
 				scan.close();
 				break;
+			default:
+				System.out.println("\n Opção inválida");
+				break;
 			}
 			
 		}
