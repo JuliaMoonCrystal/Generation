@@ -34,6 +34,9 @@ public class Produto {
 	public void setNumSerie(String numSerie) {
 		this.numSerie = numSerie;
 	}
-
+    
+	public void imprimir() {
+		System.out.println("\nProduto: "+this.nome+"\nTipo: "+this.tipo+"\nNumero de série: "+this.numSerie);
+	}
     
 }
