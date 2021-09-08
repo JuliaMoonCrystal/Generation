@@ -16,8 +16,12 @@ public class TesteFuncionario {
 		System.out.println("Mudando o salário do análista junior");
 		System.out.println("------------------------------------");
 		funcionario3.mudaSalario(2000.0);
+		funcionario2.mudaSalario(2000.0);
+		funcionario.mudaSalario(2000.0);
 		
 		System.out.println("Novo salário");
+		funcionario.imprimir();
+		funcionario2.imprimir();
 		funcionario3.imprimir();
 		
 
