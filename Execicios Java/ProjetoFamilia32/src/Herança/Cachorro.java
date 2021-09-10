@@ -2,31 +2,12 @@ package Herança;
 
 public class Cachorro extends Animal{
     
-	private String nome;
-    private int idade;
-    
-    public Cachorro(String especie, String categoria,String nome,int idade) {
-		super(especie, categoria);		
-		this.idade=idade;
-		this.nome=nome;
-	}
 
-	public String getNome() {
-		return nome;
+    public Cachorro(String especie,String categoria,String nome,int idade) {
+		super(especie, categoria,nome,idade);		
+		
 	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-	public int getIdade() {
-		return idade;
-	}
-
-	public void setIdade(int idade) {
-		this.idade = idade;
-	}
-    
+	
 	public void EmitirSom() {
 		System.out.println("Emite o som :Lati");
 	}
@@ -37,7 +18,13 @@ public class Cachorro extends Animal{
 	
 
 	public void imprimir() {
-		System.out.println("\nEspécie: "+getEspecie()+"\nCatégoria: "+getCategoria()+"\nNome :"+nome+"\nIdade :"+idade+" messes");
+		System.out.println("\nEspécie: "+getEspecie()+"\nCatégoria: "+getCategoria()+"\nNome :"+getNome()+"\nIdade :"+getIdade());
+	}
+
+	@Override
+	public void imprirmir(String tamanho) {
+		System.out.println("\nEspécie: "+getEspecie()+"\nCatégoria: "+getCategoria()+"\nNome :"+getNome()+"\nIdade :"+getIdade()+"\nTamanho :"+tamanho);
+		
 	}
 	
     

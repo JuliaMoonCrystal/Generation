@@ -1,32 +1,13 @@
 package Herança;
 
 public class Cavalo extends Animal{
-      private String nome;
-      private int idade;
+    
 	
-	public Cavalo(String especie, String categoria, String nome,int idade) {
-		super(especie, categoria);//parametros super classe
-		this.idade=idade;
-		this.nome=nome;
-		
-	}
+	 public Cavalo(String especie, String categoria,String nome,int idade) {
+			super(especie, categoria,nome,idade);		
+			
+		}
 
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-	public int getIdade() {
-		return idade;
-	}
-
-	public void setIdade(int idade) {
-		this.idade = idade;
-	}
-	
 	public void EmitirSom() {
 		System.out.println("Emite som :Relicho");
 	}
@@ -35,8 +16,15 @@ public class Cavalo extends Animal{
 		System.out.println("Cavalo está :Correndo , Correndo");
 	}
 	
-	public void imprimir() {
-		System.out.println("\nEspécie: "+getEspecie()+"\nCatégoria: "+getCategoria()+"\nNome :"+nome+"\nIdade :"+idade);
+	public void imprimir(String tamanho) {
+		System.out.println("\nEspécie: "+getEspecie()+"\nCatégoria: "+getCategoria()+"\nNome :"+getNome()+"\nIdade :"+getIdade()+"\nTamanho :"+tamanho);
+	}
+
+	@Override
+	public void imprirmir(String tamanho) {
+		System.out.println("\nEspécie: "+getEspecie()+"\nCatégoria: "+getCategoria()+"\nNome :"+getNome()+"\nIdade :"+getIdade()+"\nTamanho :"+tamanho);
+	
+		
 	}
 
 }

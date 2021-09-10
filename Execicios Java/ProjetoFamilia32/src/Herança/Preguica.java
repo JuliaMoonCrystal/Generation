@@ -2,33 +2,13 @@ package Herança;
 
 public class Preguica extends Animal{
    
-   private String nome;
-   private  int idade;
-   
-   public Preguica(String especie, String categoria,String nome,int idade) {
-		super(especie, categoria);
-		this.idade=idade;
-		this.nome=nome;
-	}
+	 public Preguica(String especie,String categoria,String nome,int idade) {
+			super(especie, categoria,nome,idade);		
+			
+		}
 
-   public String getNome() {
-	    return nome;
-   }
-
-   public void setNome(String nome) {
-	   this.nome = nome;
-   }
-
-   public int getIdade() {
-	   return idade;
-   }
-
-   public void setIdade(int idade) {
-	  this.idade = idade;
-   }
-   
    public void EmitirSom() {
-		System.out.println("Som qualquer");
+		System.out.println("Som da Preguiça");
 	}
 	
 	public void Subir() {
@@ -37,7 +17,13 @@ public class Preguica extends Animal{
    
 
 	public void imprimir() {
-		System.out.println("\nEspécie: "+getEspecie()+"\nCatégoria: "+getCategoria()+"\nNome :"+nome+"\nIdade :"+idade);
+		System.out.println("\nEspécie: "+getEspecie()+"\nCatégoria: "+getCategoria()+"\nNome :"+getNome()+"\nIdade :"+getIdade());
+	}
+
+	@Override
+	public void imprirmir(String tamanho) {
+		System.out.println("\nEspécie: "+getEspecie()+"\nCatégoria: "+getCategoria()+"\nNome :"+getNome()+"\nIdade :"+getIdade()+"\nTamanho :"+tamanho);
+		
 	}
    
 }
