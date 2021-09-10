@@ -16,9 +16,9 @@ public class Cavalo extends Animal{
 		System.out.println("Cavalo está :Correndo , Correndo");
 	}
 	
-	public void imprimir(String tamanho) {
-		System.out.println("\nEspécie: "+getEspecie()+"\nCatégoria: "+getCategoria()+"\nNome :"+getNome()+"\nIdade :"+getIdade()+"\nTamanho :"+tamanho);
-	}
+//	public void imprimir(String tamanho) {
+//		System.out.println("\nEspécie: "+getEspecie()+"\nCatégoria: "+getCategoria()+"\nNome :"+getNome()+"\nIdade :"+getIdade()+"\nTamanho :"+tamanho);
+//	}
 
 	@Override
 	public void imprirmir(String tamanho) {

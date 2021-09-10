@@ -16,9 +16,9 @@ public class Preguica extends Animal{
 	}
    
 
-	public void imprimir() {
-		System.out.println("\nEspécie: "+getEspecie()+"\nCatégoria: "+getCategoria()+"\nNome :"+getNome()+"\nIdade :"+getIdade());
-	}
+//	public void imprimir() {
+//		System.out.println("\nEspécie: "+getEspecie()+"\nCatégoria: "+getCategoria()+"\nNome :"+getNome()+"\nIdade :"+getIdade());
+//	}
 
 	@Override
 	public void imprirmir(String tamanho) {
