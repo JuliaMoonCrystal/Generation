@@ -57,7 +57,7 @@ public void setTipo(String tipo) {
 	  String codProduto,nomeProduto,tipo;
 	  int qtd;
 	  
-	  for(int x=0; x<3;x++) {
+	 // for(int x=0; x<3;x++) {
 		  System.out.println("\nDigite o código do produto: ");
 		  codProduto= scan.nextLine();
 		  
@@ -72,7 +72,7 @@ public void setTipo(String tipo) {
 		  
 		  estoque.add(new Estoque(codProduto,qtd,nomeProduto,tipo));
 		  scan.close();
-	  }
+	//  }
 	
 	return estoque;
 }
