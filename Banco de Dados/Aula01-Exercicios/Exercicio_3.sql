@@ -34,3 +34,4 @@ UPDATE tb_estudantes SET sala ="102B" WHERE id =2;
 SELECT * FROM tb_estudantes;
 
 
+
