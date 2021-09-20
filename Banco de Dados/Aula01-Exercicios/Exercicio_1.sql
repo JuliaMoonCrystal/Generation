@@ -18,10 +18,10 @@ INSERT INTO tb_funcionaries(nome,setor,salario,cargo) VALUES
 ("Luan"," RH",6000,"Gerente do RH"),
 ("Juliana","Financeiro",6000,"Contador");
 
-SELECT * FROM tb_funcionaries;
+SELECT * FROM tb_funcionaries WHERE salario < 2000;
 
 -- maior que 2000
-SELECT nome,setor,salario,cargo FROM tb_funcionaries WHERE salario >=2000;
+SELECT salario FROM tb_funcionaries WHERE salario >=2000;
 
 -- menor que 2000
 SELECT nome,setor,salario,cargo FROM tb_funcionaries WHERE salario <2000;
