@@ -31,3 +31,4 @@ SELECT nome,valor_unidade AS preço ,tipo_Produto AS tipo,estoque FROM tb_Produt
 -- Atualizando um item
 UPDATE tb_Produto SET valor_unidade= 400.70 WHERE id =7;
 SELECT *FROM tb_Produto
+
