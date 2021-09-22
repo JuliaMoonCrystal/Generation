@@ -43,7 +43,7 @@ SELECT * FROM tb_curso WHERE carga_horaria > 200;
 SELECT * FROM tb_curso WHERE carga_horaria BETWEEN 200 AND 300; 
 
 -- Faça um select  utilizando LIKE buscando os Produtos com a letra J.
-SELECT * FROM tb_curso WHERE nome LIKE "%E%";
+SELECT * FROM tb_curso WHERE nome LIKE "%J%";
 
 -- Faça um um select com Inner join entre  tabela categoria e produto.
 SELECT * FROM tb_curso INNER JOIN tb_categoria
