@@ -11,7 +11,7 @@ public class ControllerTeste {
    @GetMapping("/hello")
     
    public String sayHello() {
-	   return "Hello World!!! \n Nosso Primeiro projeto Spring";
+	   return "<h1>Hello World!!! \n Nosso Primeiro projeto Spring</h1>";
    }
 	
 }
