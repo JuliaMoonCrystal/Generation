@@ -1,2 +1,2 @@
-# Atividades realizadas no bootcamp da Generation
+# Atividades realizadas no bootcamp da Generation.
 

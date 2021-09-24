@@ -16,19 +16,21 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/postagens")
-@CrossOrigin("*")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 
 public class PostagensController {
     
 	@Autowired
 	private PostagemRepository repository;
     
+	//vai retornar todos os dados da tabela
 	@GetMapping
 	public ResponseEntity<List<Postagem>> GetAll(){
 		return ResponseEntity.ok(repository.findAll());
 		
 	}
 	
+	// pegando pelo id
 	@GetMapping("/{id}")
 	public ResponseEntity<Postagem> GetById(@PathVariable long id){
 		 return repository.findById(id)
@@ -37,6 +39,7 @@ public class PostagensController {
 		
 	}
 	
+	// pegando pelo nome
 	@GetMapping("/titulo/{titulo}")
 	public ResponseEntity <List<Postagem>> GetByNome(@PathVariable String titulo){
 		return ResponseEntity.ok(repository.findAllByTituloContainingIgnoreCase(titulo));
