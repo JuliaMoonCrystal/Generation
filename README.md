@@ -1,13 +1,15 @@
-
-
-
-<h1># Atividades realizadas no bootcamp da Generation.</h1>
-<style>
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
    h1{
      color: red;
    }
 
 </style>  
+  </head>
+<body>
+<h1># Atividades realizadas no bootcamp da Generation.</h1>
 
 <h2>Bloco 1</h2>
 <ol>
@@ -23,3 +25,5 @@
   <li>1° Parte do blog pessoal</li>
   <li>1° Parte do projeto integrador</li>
 </ol>
+<body>
+</html>
