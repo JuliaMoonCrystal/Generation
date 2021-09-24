@@ -13,7 +13,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity //endica as entidades
-@Table(name ="postagem")  //indica que essa entidade será uma tabela no banco de dados
+@Table(name ="tb_postagem")  //indica que essa entidade será uma tabela no banco de dados
 public class Postagem {
    
 	@Id
