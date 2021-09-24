@@ -1,5 +1,5 @@
 
-<h1 color: red># Atividades realizadas no bootcamp da Generation.</h1>
+<h1 font-color: red> Atividades realizadas no bootcamp da Generation.</h1>
 
 <h2>Bloco 1</h2>
 <ol>
