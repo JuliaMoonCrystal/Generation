@@ -30,6 +30,10 @@ public class Categoria {
 	@Size(min=5,max=50)
 	private String faixaEtaria;
 	
+	@NotNull
+	@Size(min=5,max=50)
+	private String descricao;
+	
     @OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL)
     @JsonIgnoreProperties("categoria")
 	private List<Produto> produto;
@@ -67,5 +71,13 @@ public class Categoria {
 		this.produto = produto;
 	}
 	
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
 	
 }
