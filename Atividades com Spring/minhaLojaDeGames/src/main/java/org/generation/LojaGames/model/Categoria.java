@@ -23,15 +23,15 @@ public class Categoria {
 	private long id;
 	
 	@NotNull
-	@Size(min=5,max=50)
+	@Size(min=5,max=1000)
 	private String categoria;
 	
-	@NotNull
-	@Size(min=5,max=50)
+	@NotNull(message = "Deve estar entre 5 e 1000")
+	@Size(min=5,max=1000)
 	private String faixaEtaria;
 	
 	@NotNull
-	@Size(min=5,max=50)
+	@Size(min=5,max=1000)
 	private String descricao;
 	
     @OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL)
