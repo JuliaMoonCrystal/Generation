@@ -24,7 +24,7 @@ public class Categoria {
 	
 	@NotNull
 	@Size(min=5,max=1000)
-	private String categoria;
+	private String tipo;
 	
 	@NotNull(message = "Deve estar entre 5 e 1000")
 	@Size(min=5,max=1000)
@@ -47,12 +47,12 @@ public class Categoria {
 		this.id = id;
 	}
 	
-	public String getCategoria() {
-		return categoria;
+	public String getTipo() {
+		return tipo;
 	}
 	
-	public void setCategoria(String categoria) {
-		this.categoria = categoria;
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
 	
 	public  String getFaixaEtaria() {

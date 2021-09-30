@@ -39,16 +39,16 @@ public class CategoriaController {
 	
 	@GetMapping("/descricao/{descricao}") //vai retornar todas as descrição passadas
 	public ResponseEntity<List<Categoria>> FindByDescricao(@PathVariable String descricao){
-		return ResponseEntity.ok(repository.findAllByCategoriaContainingIgnoreCase(descricao));	
+		return ResponseEntity.ok(repository.findAllByDescricaoContainingIgnoreCase(descricao));	
 	}
 	
 	@PostMapping   // adiciona uma nova categoria
-	public ResponseEntity<Categoria> PosCategoria(@RequestBody Categoria categoria){
+	public ResponseEntity<Categoria> posCategoria(@RequestBody Categoria categoria){
 		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(categoria));		
 	}
 	
 	@PutMapping
-	public ResponseEntity<Categoria> PutCategoria(@RequestBody Categoria categoria){
+	public ResponseEntity<Categoria> putCategoria(@RequestBody Categoria categoria){
 		return ResponseEntity.ok(repository.save(categoria));
 		
 	}
