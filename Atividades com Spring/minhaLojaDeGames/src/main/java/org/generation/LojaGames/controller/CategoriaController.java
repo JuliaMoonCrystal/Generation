@@ -27,23 +27,23 @@ public class CategoriaController {
 	//
 	
 	@GetMapping  // vai retornar todos os itens da categoria
-	public ResponseEntity<List<Categoria>> FindAllCategoria(){
+	public ResponseEntity<List<Categoria>> findAllCategoria(){
 		return ResponseEntity.ok(repository.findAll());		
 	}
 	
 	@GetMapping("/{id}")  //vai retornar o item conforme o id passado
-	public ResponseEntity<Categoria> FindAllByCategoria(@PathVariable long id){
+	public ResponseEntity<Categoria> findAllByCategoria(@PathVariable long id){
 		return repository.findById(id).map(resp -> ResponseEntity.ok(resp))
 				.orElse(ResponseEntity.notFound().build());	
 	}
 	
 	@GetMapping("/descricao/{descricao}") //vai retornar todas as descrição passadas
-	public ResponseEntity<List<Categoria>> FindByDescricao(@PathVariable String descricao){
+	public ResponseEntity<List<Categoria>> findByDescricao(@PathVariable String descricao){
 		return ResponseEntity.ok(repository.findAllByDescricaoContainingIgnoreCase(descricao));	
 	}
 	
 	@PostMapping   // adiciona uma nova categoria
-	public ResponseEntity<Categoria> posCategoria(@RequestBody Categoria categoria){
+	public ResponseEntity<Categoria> postCategoria(@RequestBody Categoria categoria){
 		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(categoria));		
 	}
 	
@@ -54,7 +54,7 @@ public class CategoriaController {
 	}
 	
 	@DeleteMapping("/{id}")
-	public void DeleteCategoria(@PathVariable long id) {
+	public void deleteCategoria(@PathVariable long id) {
 		repository.deleteById(id);
 	}
 	
