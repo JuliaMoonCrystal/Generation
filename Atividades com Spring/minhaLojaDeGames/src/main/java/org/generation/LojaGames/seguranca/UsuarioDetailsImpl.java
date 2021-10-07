@@ -3,6 +3,7 @@ package org.generation.LojaGames.seguranca;
 import java.util.Collection;
 import java.util.List;
 
+import org.generation.LojaGames.model.Usuario;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -14,9 +15,9 @@ public class UsuarioDetailsImpl implements UserDetails {
 	private String password;
 	private List<GrantedAuthority> authorities;
 	
-	public UsuarioDetailsImpl(String userName, String password) {
-		this.userName = userName;
-		this.password = password;
+	public UsuarioDetailsImpl(Usuario usuario) {
+		this.userName = usuario.getUsuario();
+		this.password = usuario.getSenha();
 	}
 	
 	public UsuarioDetailsImpl() {
