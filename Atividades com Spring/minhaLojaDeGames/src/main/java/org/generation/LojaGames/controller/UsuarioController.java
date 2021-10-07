@@ -2,7 +2,6 @@ package org.generation.LojaGames.controller;
 
 import java.util.List;
 import java.util.Optional;
-
 import org.generation.LojaGames.model.Usuario;
 import org.generation.LojaGames.model.UsuarioLogin;
 import org.generation.LojaGames.service.UsuarioService;
@@ -18,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")
-@RequestMapping("/usuario")
+@RequestMapping("/usuarios")
 public class UsuarioController {
 
 	@Autowired
@@ -31,7 +30,8 @@ public class UsuarioController {
 
 	@PostMapping("/logar")
 	public ResponseEntity<UsuarioLogin> login(@RequestBody Optional<UsuarioLogin> userLogin) {
-		return service.autenticarUsuario(userLogin).map(resposta -> ResponseEntity.ok(resposta))
+		return service.autenticarUsuario(userLogin)
+				.map(resposta -> ResponseEntity.ok(resposta))
 				.orElse(ResponseEntity.status(HttpStatus.UNAUTHORIZED).build());
 	}
 	
