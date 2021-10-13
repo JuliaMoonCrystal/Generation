@@ -1,7 +1,6 @@
-package org.generation.minhLojaDeGames.controller;
+package org.generation.lojaDeJogos.controller;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import org.generation.LojaGames.model.Usuario;
 import org.generation.LojaGames.repository.UsuarioRepository;
 import org.junit.jupiter.api.BeforeAll;
