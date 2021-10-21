@@ -1,0 +1,59 @@
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2017/08/15/08/23/stars-2643089_960_720.jpg);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+   display: flex;
+   flex-flow: row;
+   align-items:center;
+   justify-content: space-between;
+}
+
+img{
+    height: 300px;
+    width: 380px;
+}
+
+.nome-empresa{
+    background-color: white;
+    padding: 2px;
+}
+
+#sobre{
+    background-color: white;
+}
+
+.menu ul li{
+    display: inline;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    padding: 2px;
+    background-color:burlywood;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 80%;
+    border: 3px solid crimson;   
+}
+
+.flex-container{
+    display: flex ;
+}
+
+.flex-container div{
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
