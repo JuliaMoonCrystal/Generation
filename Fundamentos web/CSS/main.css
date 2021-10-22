@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .menu{
+   background-color: rgb(12, 1, 1);
+   display: flex;
+   flex-direction:row;
+   align-items: center;
+ }
+
+ header nav a{
+    text-decoration: none;
+    color: rgb(238, 228, 228);
+    margin-right: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header nav a:hover{
+    color: blue;
+}
+
+header ul li{
+    display: inline;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 80%;
+}
+
+/*Anime em destaque*/
+ .Anime-principal{
+    font-size: 15px;
+    background:linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../IMG/fairytail.jpg');
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+div .titulo{
+  font-size: 30px;
+  color: red;
+}
+
+div .descricao{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    padding-right: 500px;
+    color: white;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px  30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .2s ease all;
+    
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.Anime-principal .container{
+    margin-left: 20px;
+    width: 60%;
+}
+
+.box-anime{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-animes{
+    margin-top: 5px;
+    background-color: black;
+}
+
+
