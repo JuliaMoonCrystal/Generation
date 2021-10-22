@@ -22,4 +22,5 @@
   <li>React e node.js</li>
   <li>Parte final do do blog pessoal</li>
   <li>Parte final do projeto integrador</li>
+  <li>Apresentação do projeto integrador</li>
 </ol>
