@@ -8,7 +8,13 @@ function enviar(){
         console.log('testando os comandos no console');
     }
     else{
-        alert('Todos os campus devem estar preenchidos')
+        alert('Todos os campos devem estar preenchidos')
         console.log('testando os comandos no console')
+        document.body.style.clear(nome.value)
       }
+  }
+
+  function mudacor() {
+      var txtnome= document.getElementById('teste')
+      txtnome.style.color='red';
   }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/contato.css">
+    <link rel="shortcut icon" type="imagex/png" href="/IMG/icon.ico">
     <title>Contato</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
     </div>
     <div class="flex-container">
         <div class="formulario">
-            <form action="">
+            <form  >
                 <label>Nome completo:</label><br>
                 <input  id="txtnome" type="text" placeholder="Digite o seu nome aqui">
 
@@ -26,11 +27,12 @@
                  
                 <br>
                 <input type="button" id="botao" value="Enviar" onclick="enviar()">
+                <input type="reset" id="botao" value="Limpar" >
                  
             </form>
         </div>
         <div id="loja">
-            <h3>Conheça a nossa loja clicando na imagem</h3>
+            <h3 id="teste" onmouseover="mudacor()">Conheça a nossa loja clicando na imagem</h3>
            <a href="index.html"><img id="logo"  src="https://st3.depositphotos.com/13324256/16480/i/600/depositphotos_164806760-stock-photo-composition-of-school-supplies.jpg"></a>
         </div>
     </div>
