@@ -1,0 +1,53 @@
+body{
+    background-color: cornflowerblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+label{
+    font-size: 30px;
+    
+}
+
+#txtnome {
+   height: 20px;
+   width: 400px;
+   border-radius: 10%;
+   margin-top: 10px;
+}
+
+#txtemail {
+    height: 20px;
+    width: 400px;
+    border-radius: 10%;
+    margin-top: 10px;
+ }
+
+ #txtComent{
+     height: 300px;
+     width: 500px;
+     margin-top: 10px;
+ }
+
+ #botao{
+     border-radius: 10%;
+     width: 90px;
+     height: 40px;
+     margin-top: 20px;
+ }
+
+ .flex-container{
+    display: flex ;
+}
+
+.flex-container div{
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+#logo{
+  border: 3px solid crimson;
+  width: 500px;
+  height: 300px;
+}
